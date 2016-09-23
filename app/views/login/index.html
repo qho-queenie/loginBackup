@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+  </head>
+  <body>
+
+    <div>
+      <h1>Registration</h1> 
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+            <p>{{message}}</p>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+      <form action="/logins/add" method="POST">
+        First Name: <input type="text" name="first_name"></br>
+        Last Name: <input type="text" name="last_name"></br>
+        Email: <input type="text" name="email"></br>
+        Password:<input type="text" name="password"></br>
+        Confirm PW: <input type="text" name="cPassword"></br>
+        <input type="submit" value="Register">
+      </form>
+    </div>
+
+
+    <div>
+      <h1>Login</h1>
+      <form action="/logins/login" method="POST">
+        Email: <input type="text" name="email"></br>
+        Password:<input type="text" name="password"></br>
+        <input type="submit" value="Register">
+      </form>
+    </div>
+  </body>
+</html>
