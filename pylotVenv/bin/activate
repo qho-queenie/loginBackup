@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/queenieho/Desktop/WebFundamental/Python/Flask/CodingDojo_Python/myEnvironments/login/pylotVenv"
+VIRTUAL_ENV="/Users/queenieho/Desktop/WebFundamental/Python/Flask/CodingDojo_Python/myEnvironments/loginBackup/pylotVenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
